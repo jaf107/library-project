@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../book';
 import { BookService } from '../book.service';
 
 @Component({
@@ -11,6 +12,10 @@ export class BookListComponent implements OnInit {
   constructor(private bookService: BookService) { }
   books = this.bookService.getBooks();
   ngOnInit(): void {
+  }
+
+  onDelete(book: { name: any; }){
+    alert(book.name);
   }
 
 }

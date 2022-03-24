@@ -8,6 +8,7 @@
             <th>Name</th>
             <th>Year</th>
             <th>Availability</th>
+            <th></th>
         </tr>
 
         <tr *ngFor="let book of books">
@@ -15,7 +16,9 @@
             <td>{{book.name}} </td>
             <td>{{book.year}} </td>
             <td *ngIf="book.available" > available</td>
+            <!-- <td *></td> -->
             <td *ngIf="!book.available"> borrowed</td>
+            <td><button (click)="onDelete(book)" class="btn"> Del</button></td>
         </tr>
     <!-- 
         <tr>
