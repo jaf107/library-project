@@ -30,7 +30,7 @@ export class BookService {
     return this.books;
   }
 
-  deleteRow(i:any){
-    this.books.splice(i,1);
+  deleteRow(id:number){
+    this.books.splice(id,1);
   }
 }
