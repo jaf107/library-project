@@ -5,7 +5,7 @@ import { Book } from './book';
   providedIn: 'root'
 })
 export class BookService {
-  books: Book[] =[ {
+  private books: Book[] =[ {
     id:1,
     name: "Twilight",
     year: 2004,
@@ -13,14 +13,14 @@ export class BookService {
   }, 
   {
     id:2,
-    name: "Twilight",
-    year: 2004,
-    available: true  
+    name: "Game of Thrones",
+    year: 1992,
+    available: false  
   }, 
   {
     id:3,
-    name: "Twilight",
-    year: 2006,
+    name: "Harry Potter",
+    year: 1989,
     available: true   
   }
 ]
