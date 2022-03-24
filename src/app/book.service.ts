@@ -29,4 +29,8 @@ export class BookService {
   getBooks(): Book[]{
     return this.books;
   }
+
+  deleteRow(i:any){
+    this.books.splice(i,1);
+  }
 }
