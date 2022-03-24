@@ -9,7 +9,15 @@
             <th>Year</th>
             <th>Availability</th>
         </tr>
-    
+
+        <tr *ngFor="let book of books">
+            <td>{{book.id}}</td>
+            <td>{{book.name}} </td>
+            <td>{{book.year}} </td>
+            <td *ngIf="book.available" > available</td>
+            <td *ngIf="!book.available"> borrowed</td>
+        </tr>
+    <!-- 
         <tr>
             <td>1</td>
             <td>Game of Thrones</td>
@@ -29,6 +37,10 @@
             <td>Journey to the moon</td>
             <td>2010</td>
             <td>Yes</td>
-        </tr>
+        </tr> -->
+    </table>
+
+    <table class="table-dark">
+
     </table>
 </div>
