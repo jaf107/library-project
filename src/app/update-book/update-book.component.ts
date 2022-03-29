@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Book } from '../book';
 import { BookService } from '../book.service';
 
 @Component({
@@ -13,6 +14,10 @@ export class UpdateBookComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.givenBook);
+  }
+
+  onSubmit(){
+
   }
 
 
