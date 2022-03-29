@@ -24,6 +24,8 @@ export class BookService {
     available: true   
   }
 ]
+  bookToBeUpdated = new Book();
+
   constructor() { }
 
   getBooks(): Book[]{
@@ -36,5 +38,14 @@ export class BookService {
 
   updateBook(book:Book){
     console.log(book);
+  }
+
+  setBookToBeUpdated(givenBook:Book){
+    this.bookToBeUpdated = givenBook;
+  }
+
+  getBookToBeUpdated(): Book{
+    console.log(this.bookToBeUpdated);
+    return this.bookToBeUpdated;
   }
 }
