@@ -33,4 +33,8 @@ export class BookService {
   deleteRow(id:number){
     this.books.splice(id,1);
   }
+
+  updateBook(book:Book){
+    console.log(book);
+  }
 }
