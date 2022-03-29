@@ -45,7 +45,7 @@ export class BookService {
   }
 
   getBookToBeUpdated(): Book{
-    console.log(this.bookToBeUpdated);
+    // console.log(this.bookToBeUpdated);
     return this.bookToBeUpdated;
   }
 }
