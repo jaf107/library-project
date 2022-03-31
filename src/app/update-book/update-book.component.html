@@ -6,16 +6,18 @@
     <form>
         <div class="form-group">
           <label for="name">Book Name</label>
-          <input type="text" class="form-control" id="name"  placeholder="Book Name">
+          <input type="text" name="name" class="form-control" id="name" [(ngModel)]="givenBook.name" placeholder="Book Name">
         </div>
         <div class="form-group">
           <label for="year">Publishing Year</label>
-          <input type="text" class="form-control" id="year" placeholder="publishing Year">
+          <input type="text" name="year" class="form-control" id="year" [(ngModel)]="givenBook.year" placeholder="publishing Year">
         </div>
         <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="availability">
+          <input type="checkbox" name="available" class="form-check-input" [(ngModel)]="givenBook.available" id="availability">
           <label class="form-check-label" for="availability">available</label>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" (click)="onSave()" class="btn btn-primary">Save</button>
+        
+        <button type="submit" (click)="onBack()" class="btn btn-primary">Back</button>
       </form>
 </div>

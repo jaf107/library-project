@@ -2,16 +2,19 @@
 
 <div class="container">
 
-    <table class="table table-striped" >
+    <table class="table " >
         <tr>
             <th>#</th>
             <th>Name</th>
             <th>Year</th>
             <th>Availability</th>
-            <th></th>
+            <th>Update</th>
+            <th>Delete</th>
+            
         </tr>
 
-        <tr *ngFor="let book of books">
+        <tr *ngFor="let book of books; let i = index">
+            <!-- <td>{{i}} </td> -->
             <td>{{book.id}}</td>
             <td>{{book.name}} </td>
             <td>{{book.year}} </td>
@@ -19,7 +22,7 @@
             <!-- <td *></td> -->
             <td *ngIf="!book.available"> borrowed</td>
             
-            <td><button (click)="onUpdate(book)" class="btn "> Update</button></td>
+            <td><button (click)="onUpdate(book,i)" class="btn "> Update</button></td>
             <td><button (click)="onDelete(book)" class="btn "> Delete</button></td>
         </tr>
     <!-- 
@@ -48,4 +51,6 @@
     <table class="table-dark">
 
     </table>
+
+    <button (click)="addBook()" class="btn">Add Button</button>
 </div>
