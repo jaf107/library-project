@@ -2,13 +2,13 @@
 
 <div class="container">
 
-    <div class="col-md-12 center">
+    <div>
         <button (click)="addBook()" id="addbutton" class="btn btn-success">Add Button</button>
     </div>
 
     <table class="table table-bordered table-hover  ">
         <caption>List of books</caption>
-        <thead class="thead-light">
+        <thead class="thead-dark">
             <tr>
                 <th>#</th>
                 <th>Name</th>
@@ -20,7 +20,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let book of books; let i = index">
+            <tr *ngFor="let book of books; let i = index" [ngClass]="book.available ? 'table-success': 'table-danger'" >
                 <!-- <td>{{i}} </td> -->
                 <td>{{book.id}}</td>
                 <td>{{book.name}} </td>

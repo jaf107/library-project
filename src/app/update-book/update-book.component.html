@@ -1,7 +1,7 @@
 <div class="container">
 
-    <p>Update-book </p>
-
+    <!-- <p>Update-book </p> -->
+    <h2 class="center" >Update Book</h2>
 
     <form>
         <div class="form-group">
@@ -16,7 +16,7 @@
           <input type="checkbox" name="available" class="form-check-input" [(ngModel)]="givenBook.available" id="availability">
           <label class="form-check-label" for="availability">available</label>
         </div>
-        <button type="submit" (click)="onSave()" class="btn btn-primary">Save</button>
+        <button type="submit" (click)="onSave()" class="btn btn-success">Save</button>
         
         <button type="submit" (click)="onBack()" class="btn btn-primary">Back</button>
       </form>
