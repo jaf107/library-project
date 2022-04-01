@@ -3,5 +3,16 @@
 }
 
 #main{
-    /* background-image: url('../images/library.jpg'); */
+    /* background-image: url('../images/light.jpg'); */
+    background-repeat:  repeat;
+    height: 100%;
+    /* filter: blur(1px); */
 }
+
+html { 
+    background: url('..//images/light.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
