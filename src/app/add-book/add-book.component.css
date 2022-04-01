@@ -4,4 +4,11 @@ button,input{
 
 button{
     margin: 15px;
+    padding: 10px;
+}
+
+.center{
+    text-align: center;
+    border: 1px solid wheat;
+    padding: 20px;
 }

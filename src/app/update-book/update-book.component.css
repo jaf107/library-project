@@ -4,6 +4,7 @@ button,input{
 
 button{
     margin: 15px;
+    padding: 10px;
 }
 
 .center{
