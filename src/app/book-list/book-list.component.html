@@ -2,55 +2,37 @@
 
 <div class="container">
 
-    <table class="table " >
-        <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Year</th>
-            <th>Availability</th>
-            <th>Update</th>
-            <th>Delete</th>
-            
-        </tr>
+    <div class="col-md-12 center">
+        <button (click)="addBook()" id="addbutton" class="btn btn-success">Add Button</button>
+    </div>
 
-        <tr *ngFor="let book of books; let i = index">
-            <!-- <td>{{i}} </td> -->
-            <td>{{book.id}}</td>
-            <td>{{book.name}} </td>
-            <td>{{book.year}} </td>
-            <td *ngIf="book.available" > available</td>
-            <!-- <td *></td> -->
-            <td *ngIf="!book.available"> borrowed</td>
-            
-            <td><button (click)="onUpdate(book,i)" class="btn "> Update</button></td>
-            <td><button (click)="onDelete(book)" class="btn "> Delete</button></td>
-        </tr>
-    <!-- 
-        <tr>
-            <td>1</td>
-            <td>Game of Thrones</td>
-            <td>1995</td>
-            <td>Yes</td>
-        </tr>
+    <table class="table table-bordered table-hover  ">
+        <caption>List of books</caption>
+        <thead class="thead-light">
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Year</th>
+                <th>Availability</th>
+                <th>Update</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let book of books; let i = index">
+                <!-- <td>{{i}} </td> -->
+                <td>{{book.id}}</td>
+                <td>{{book.name}} </td>
+                <td>{{book.year}} </td>
+                <td *ngIf="book.available"> available</td>
+                <!-- <td *></td> -->
+                <td *ngIf="!book.available"> borrowed</td>
     
-        <tr>
-            <td>2</td>
-            <td>Murder on the Nile</td>
-            <td>1823</td>
-            <td>No</td>
-        </tr>
-        
-        <tr>
-            <td>3</td>
-            <td>Journey to the moon</td>
-            <td>2010</td>
-            <td>Yes</td>
-        </tr> -->
+                <td><button (click)="onUpdate(book,i)" class="btn btn-warning"> Update</button></td>
+                <td><button (click)="onDelete(book)" class="btn btn-danger"> Delete</button></td>
+            </tr>
+        </tbody>
     </table>
 
-    <table class="table-dark">
-
-    </table>
-
-    <button (click)="addBook()" class="btn">Add Button</button>
 </div>

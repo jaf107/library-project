@@ -9,6 +9,19 @@ table{
 
 td,th {
     padding: 5px;
-    border: 1px solid black;
-
+    /* border: 1px solid black; */
+    text-align: center;
+    padding: 15px 5px;
 }
+
+#addbutton{
+    margin-left: 40%;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
