@@ -7,6 +7,7 @@ import { BookListComponent } from './book-list/book-list.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { UpdateBookComponent } from './update-book/update-book.component';
 import { AddBookComponent } from './add-book/add-book.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AddBookComponent } from './add-book/add-book.component';
     BookListComponent,
     NavbarComponent,
     UpdateBookComponent,
-    AddBookComponent
+    AddBookComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,

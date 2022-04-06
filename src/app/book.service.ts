@@ -43,7 +43,7 @@ export class BookService {
 
   getBookToBeUpdated(): Book {
     // console.log(this.bookToBeUpdated);
-    return this.bookToBeUpdated;
+    return JSON.parse(JSON.stringify(this.bookToBeUpdated));
   }
 
   updateBook(givenBook:Book){
