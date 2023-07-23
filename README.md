@@ -1,3 +1,4 @@
+This Project is a basic Book Library project built using Angular. It is an introductory project for Frontend of Web Technology Course.
 # LibraryProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
